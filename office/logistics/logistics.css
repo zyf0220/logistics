@@ -6,17 +6,32 @@
     float:right;
     background-color:#66CCFF;
     color:white;
-    padding:0px;
+    padding:16px;
     text-decoration: none;
-    z-index: 100000
+    z-index: 100
 }
-.kuang{
+.kuang1{
 	width:770px;
 	height:340px;
 	background-color:	#F0FFFF;
 	-moz-box-shadow: 10px 10px 5px #5F9EA0; 
 	box-shadow: 10px 10px 5px #5F9EA0;
-	/*border:2px solid;*/
+	border-radius:15px;
+}
+.kuang2{
+	width:770px;
+	height:280px;
+	background-color:	#F0FFFF;
+	-moz-box-shadow: 10px 10px 5px #5F9EA0; 
+	box-shadow: 10px 10px 5px #5F9EA0;
+	border-radius:15px;
+}
+.kuang3{
+	width:770px;
+	height:210px;
+	background-color:	#F0FFFF;
+	-moz-box-shadow: 10px 10px 5px #5F9EA0; 
+	box-shadow: 10px 10px 5px #5F9EA0;
 	border-radius:15px;
 }
 .footer {
@@ -78,10 +93,10 @@ input[type=radio]:after {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-  text-align: center;
-  line-height: 14px;
-  font-size: 16px;
-  color: #fff;
+    text-align: center;
+    line-height: 14px;
+    font-size: 16px;
+    color: #fff;
     border: 3px solid #ddd;
     background-color: #fff;
     box-sizing:border-box;
