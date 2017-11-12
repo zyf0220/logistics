@@ -34,6 +34,18 @@
 	box-shadow: 10px 10px 5px #5F9EA0;
 	border-radius:15px;
 }
+.kuang4{
+	-web-kit-appearance:none;
+    -moz-appearance: none;
+    border: none;
+    outline: none;
+	width:770px;
+	height:60px;
+	background-color:	#F0FFFF;
+	-moz-box-shadow: 10px 10px 5px #5F9EA0; 
+	box-shadow: 10px 10px 5px #5F9EA0;
+	border-radius:15px;
+}
 .footer {
   padding-top: 5px;
   color: #777;

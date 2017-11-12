@@ -9,3 +9,4 @@ VALUES (#{},#{});
 SELECT *
 FROM zyf_feedback;
 TRUNCATE TABLE zyf_feedback;
+

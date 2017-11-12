@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>后勤问卷</title>
+<title>后勤调查问卷</title>
 <link rel="stylesheet" href="logistics.css" type="text/css">
 <script src="jquery-3.2.1.min.js"></script>
 <style>
@@ -651,9 +651,9 @@
 <br><hr>
 </div>
 
-</div>
-<br>
-
+<h2>&diams;意见和建议(选填）</h2>
+<input type="text" name="advice" class="kuang4" id="ad" value="对学校的设施改进的意见~">
+<br><br>
 <center><input button type="button" id="button" onclick="show_confirm()" value="提交" ></button></center>
 
 <div class="footer">
@@ -669,11 +669,12 @@
 	  {
 	  alert("提交成功");
 	  }
-	elsep 
+	else
 	  {
 	  alert("取消成功");
 	  }
 	}
+
 	function getValue(form) {
 		var inputList = form.getElementsByTagName('input') 
 		var value = 0;
@@ -684,7 +685,9 @@
 		}
 		return value
 	}
+
 	document.getElementById('button').onclick = function () {
+		show_confirm();
 		var formList = document.getElementsByClassName('vote');
 		var dataList = [];
 		for (var i = 0; i < formList.length; i++) {
@@ -704,6 +707,14 @@
 				console.log(json)
 			})
 		}
+		var url001="http://localhost:8080/advice/add/";
+		var url002=document.getElementById('ad').value;
+		const base = url001+url002;
+		fetch(base).then(function (r) {
+				return r.json();
+		}).then(function (json) {
+			console.log(json)
+		})
 	}
 </script>
  </body>
