@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 @CrossOrigin("*")
-@RequestMapping("/fang/lei")
+@RequestMapping("/fang")
 public class DemoController {
 
     @Autowired

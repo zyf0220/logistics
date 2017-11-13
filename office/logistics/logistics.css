@@ -10,11 +10,29 @@
     text-decoration: none;
     z-index: 100
 }
+.clear:after{
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0px;
+	clear: both;
+}
+.clear{
+	zoom: 1;
+	margin: 0;
+	padding: 0;
+}
+.float-left{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
 .kuang1{
 	width:770px;
 	height:340px;
 	background-color:	#F0FFFF;
-	-moz-box-shadow: 10px 10px 5px #5F9EA0; 
+	-moz-box-shadow: 10px 10px 5px #5F9EA0;
 	box-shadow: 10px 10px 5px #5F9EA0;
 	border-radius:15px;
 }
@@ -22,7 +40,7 @@
 	width:770px;
 	height:280px;
 	background-color:	#F0FFFF;
-	-moz-box-shadow: 10px 10px 5px #5F9EA0; 
+	-moz-box-shadow: 10px 10px 5px #5F9EA0;
 	box-shadow: 10px 10px 5px #5F9EA0;
 	border-radius:15px;
 }
@@ -30,7 +48,7 @@
 	width:770px;
 	height:210px;
 	background-color:	#F0FFFF;
-	-moz-box-shadow: 10px 10px 5px #5F9EA0; 
+	-moz-box-shadow: 10px 10px 5px #5F9EA0;
 	box-shadow: 10px 10px 5px #5F9EA0;
 	border-radius:15px;
 }
@@ -40,9 +58,9 @@
     border: none;
     outline: none;
 	width:770px;
-	height:60px;
+	height:80px;
 	background-color:	#F0FFFF;
-	-moz-box-shadow: 10px 10px 5px #5F9EA0; 
+	-moz-box-shadow: 10px 10px 5px #5F9EA0;
 	box-shadow: 10px 10px 5px #5F9EA0;
 	border-radius:15px;
 }

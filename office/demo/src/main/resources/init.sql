@@ -8,5 +8,5 @@ VALUES (#{},#{});
 
 SELECT *
 FROM zyf_feedback;
-TRUNCATE TABLE zyf_feedback;
+#TRUNCATE TABLE zyf_feedback;//清空选择表单
 
